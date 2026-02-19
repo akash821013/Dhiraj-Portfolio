@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node dist/portfolio/server/server.mjs",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:ssr": "ng build && ng run portfolio:server",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs"
   },
   "prettier": {

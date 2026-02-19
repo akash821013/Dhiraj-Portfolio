@@ -1,0 +1,169 @@
+<header class="hero">
+
+    <!-- Left Side -->
+    <div class="hero-left">
+        <div class="logo">
+            <img src="assets/images/Logo.jpg" alt="Profile Image" />
+        </div>
+
+        <div class="hero-content">
+            <p class="hello" data-aos="fade-right" >Hi, I am</p>
+            <h1 class="name" data-aos="zoom-in" data-aos-delay="150">{{ 'Dhiraj Kumar' | uppercase }}</h1>
+            <p class="role" data-aos="fade-left" data-aos-delay="300">Front-end Developer / UI Designer</p>
+
+            <div class="social-icons" data-aos="zoom-in" data-aos-delay="450">
+
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/akash821013/Clothify.git" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="hero-right">
+
+        <nav class="navbar" data-aos="zoom-in" data-aos-delay="400">
+            <a [routerLink]="['/about']">About me</a>
+            <a [routerLink]="['/skills']">Skills</a>
+            <button >Download Resume</button>
+            <a [routerLink]="['/contact']" class="btn">Contact Me</a>
+        </nav>
+
+        <div class="hero-image" data-aos="zoom-out">
+            <img src="assets/images/preview.jpg" alt="Profile Image" />
+        </div>
+
+
+
+    </div>
+</header>
+<section class="about-section">
+    <div class="about-box">
+        <!-- <h2 class="about-title">ABOUT ME</h2> -->
+        <h2>ANGULAR DEVELOPER</h2>
+
+        <p>
+            I am a passionate Front-End Developer with strong knowledge of HTML, CSS,
+            JavaScript, TypeScript, and Angular. I build modern, responsive, and
+            user-friendly web applications with clean UI design. I enjoy creating
+            interactive websites and learning new technologies to improve my skills.
+        </p>
+        <button class="btn-read">VIEW DETAILS</button>
+    </div>
+</section>
+
+
+<!-- card-feild -->
+
+<div class="card-feild">
+    <div class="card" data-aos="fade-right">
+         
+            <div class="card-body">
+                <h5 class="card-title">Experience</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">3 Years in Frontend Development</h6>
+                <p class="card-text">3 year of experience in Frontend Development specializing in Angular, TypeScript,
+                    and
+                    responsive UI design. Passionate about building modern and scalable web applications..</p>
+                <a [routerLink]="['/experience']" class="card-link">Show Details.....</a>
+
+    </div>
+</div>
+
+<div class="card" data-aos="flip-up">
+    <div class="card-body" >
+        <h5 class="card-title" style="padding-bottom: 5px;">Education</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary" style="line-height: 5px;">Master of Computer Applications
+        </h6>
+        <small class="organization">(SRK University of Bhopal)</small>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Bachelor of Computer Applications</h6>
+        <small class="organization">( MCURP University of Bhopal)</small>
+
+        <a [routerLink]="['/education']" class="card-link">Show Details.....</a>
+    </div>
+</div>
+
+
+<div class="card" data-aos="fade-left">
+    <div class="card-body">
+        <h5 class="card-title">Skill</h5>
+        <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+        <p class="card-text">Front-End Developer specializing in Angular with 3 years of hands-on experience in SPA
+            development, state management, API integration, and responsive UI design using Bootstrap and modern CSS
+            frameworks.</p>
+        <a [routerLink]="['/skills']" class="card-link">Show Details.....</a>
+    </div>
+</div>
+
+
+<div class="card" data-aos="fade-right">
+    <div class="card-body" >
+        <h5 class="card-title">Projects</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+            content.</p>
+        <a [routerLink]="['/projects']" class="card-link">Show Details.....</a>
+    </div>
+</div>
+
+<!-- <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Technologies</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            <a routerLink="/technologies" class="card-link">Show Details.....</a>
+        </div>
+    </div> -->
+
+<div class="card" data-aos="flip-up">
+    <div class="card-body">
+        <h5 class="card-title">Contact</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Get In Touch</h6>
+        <p class="card-text">If you have any project idea, job opportunity, or want to collaborate,
+            feel free to contact me. I will respond as soon as possible.
+        </p>
+        <a [routerLink]="['/contact']" class="card-link">Show Details.....</a>
+
+
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+
+    <div class="container">
+        <div class="footer-content" data-aos="zoom-in">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">DK</div>
+                <div class="logo-text">{{'Dhiraj Kumar' | uppercase}}</div>
+            </div>
+            <!-- <p class="footer-text">
+            Front-End developer and cloud enthusiast with expertise in Java,
+            Node.js, MongoDB, AWS, and cybersecurity.
+          </p> -->
+
+            <div class="social-links">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <!-- <a href="#contact">Contact</a> -->
+            </div>
+
+
+        </div>
+        <div class="copyright">
+            <p>© 2024 DHIRAJ KUMAR. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>

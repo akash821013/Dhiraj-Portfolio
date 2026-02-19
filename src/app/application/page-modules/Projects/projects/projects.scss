@@ -1,0 +1,78 @@
+.project-section {
+  padding: 70px 0;
+  background: #f8f9fc;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.12);
+  border-color: #0d6efd;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.project-type {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0d6efd;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.company-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #eaf2ff;
+  color: #0d6efd;
+}
+    

@@ -6,7 +6,7 @@
             Here are some of the real-world projects I worked on during my experience.
         </p>
 
-        <div class="project-grid">
+        <div class="project-grid" data-aos="zoom-in" data-aos-easing="ease-out-elastic" data-aos-duration="1500">
 
             <!-- Clothify -->
             <div class="project-card">
@@ -38,7 +38,12 @@
                     Developed UI screens and implemented frontend functionality for travel booking features.
                     Worked on clean design and reusable components.
                 </p>
-                <span class="company-tag">GAPI</span>
+                <div class="links">
+                    <span class="company-tag">GAPI</span>
+                    <div class="project-links">
+                        <a href="https://zourney.in/" target="_blank" class="btn-link">Live Demo</a>
+                    </div>
+                </div>
             </div>
 
             <!-- AppSquadz E-commerce -->
@@ -53,5 +58,9 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="backhome">
+        <button class="back-btn" (click)="goBack()">Back</button>
     </div>
 </section>

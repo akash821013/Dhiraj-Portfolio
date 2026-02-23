@@ -1,7 +1,7 @@
 import { UpperCasePipe } from '@angular/common';
-import { Component, OnInit, AfterViewInit, Inject, PLATFORM_ID} from '@angular/core';
+import { Component, AfterViewInit, Inject, PLATFORM_ID, Injectable} from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 
 
@@ -32,5 +32,16 @@ export class HomePage implements AfterViewInit {
         AOS.default.refresh();
       }, 500);
     }
+  }
+}
+
+// ---------------------- Reusable Service ------------------ //
+
+@Injectable({ providedIn: 'root' })
+export class NavigationService {
+  constructor(private router: Router) {}
+
+  goBack() {
+    this.router.navigateByUrl('/');
   }
 }

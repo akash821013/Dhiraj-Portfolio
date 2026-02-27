@@ -1,12 +1,49 @@
-body {
-  transition: 0.3s ease;
+body.dark-theme {
+  background-color: #121212;
+  color: white;
 }
 
-body.dark-theme {
-  background-color: black !important;
-  color: white !important;
+/* HERO */
+body.dark-theme .hero-left,
+body.dark-theme .hero-left::after {
+  background: #1e1e1e;
 }
-body.dark-theme .hero {
-  background-color: black;
-  color: white;
+
+body.dark-theme .hero-right {
+  background: #111;
+}
+
+/* TEXT COLORS */
+body.dark-theme .hello,
+body.dark-theme .role,
+body.dark-theme .card-text,
+body.dark-theme .card-subtitle,
+body.dark-theme .about-section h2,
+body.dark-theme section .about-box p {
+  color: #ddd;
+}
+
+body.dark-theme .name {
+  color: #4da3ff;
+}
+
+/* ABOUT SECTION */
+body.dark-theme .about-section,
+body.dark-theme .about-box {
+  background: #1e1e1e;
+}
+
+/* CARDS */
+body.dark-theme .card {
+  background: #1e1e1e;
+  box-shadow: none;
+}
+
+/* FOOTER */
+body.dark-theme footer {
+  background-color: #111;
+}
+
+body.dark-theme .footer-links a {
+  color: #ccc;
 }

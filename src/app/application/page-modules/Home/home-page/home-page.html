@@ -7,13 +7,14 @@
         </div>
 
         <div class="hero-content">
-            <p class="hello" data-aos="fade-right" >Hi, I am</p>
+            <p class="hello" data-aos="fade-right">Hi, I am</p>
             <h1 class="name" data-aos="zoom-in" data-aos-delay="150">{{ 'Dhiraj Kumar' | uppercase }}</h1>
             <p class="role" data-aos="fade-left" data-aos-delay="300">Front-end Developer / UI Designer</p>
 
             <div class="social-icons" data-aos="zoom-in" data-aos-delay="450">
 
-                <a href="https://www.linkedin.com/in/dhiraj-kumar-071461304/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/dhiraj-kumar-071461304/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
                 <a href="https://github.com/akash821013/Clothify.git" target="_blank"><i class="bi bi-github"></i></a>
                 <!-- <a href="#"><i class="bi bi-twitter"></i></a> -->
 
@@ -26,13 +27,18 @@
 
         <nav class="navbar" data-aos="zoom-in" data-aos-delay="400">
             <a [routerLink]="['/about']">About me</a>
-            <a [routerLink]="['/skills']">Skills</a>
-            <button >Download Resume</button>
+            <!-- <a [routerLink]="['/skills']">Skills</a> -->
+            <a href="assets/resume/Dhiraj_Kumar.pdf" target="_blank">View Resume</a>
             <a [routerLink]="['/contact']" class="btn">Contact Me</a>
+
+            <label class="theme-switch">
+                <input type="checkbox" (change)="toggleTheme()" style="border: none; border-radius: 50px;">
+                <span class="slider"></span>
+            </label>
         </nav>
 
         <div class="hero-image" data-aos="zoom-out">
-            <img src="assets/images/preview.jpg" alt="Profile Image" />
+            <img src="assets/images/ofcpnk.png" alt="Profile Image" style="rotate: 12deg;"/>
         </div>
 
 
@@ -59,55 +65,55 @@
 
 <div class="card-feild">
     <div class="card" data-aos="fade-right">
-         
-            <div class="card-body">
-                <h5 class="card-title">Experience</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">3 Years in Frontend Development</h6>
-                <p class="card-text">3 year of experience in Frontend Development specializing in Angular, TypeScript,
-                    and
-                    responsive UI design. Passionate about building modern and scalable web applications..</p>
-                <a [routerLink]="['/experience']" class="card-link">Show Details.....</a>
 
+        <div class="card-body">
+            <h5 class="card-title">Experience</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">3 Years in Frontend Development</h6>
+            <p class="card-text">3 year of experience in Frontend Development specializing in Angular, TypeScript,
+                and
+                responsive UI design. Passionate about building modern and scalable web applications..</p>
+            <a [routerLink]="['/experience']" class="card-link">Show Details.....</a>
+
+        </div>
     </div>
-</div>
 
-<div class="card" data-aos="flip-up">
-    <div class="card-body" >
-        <h5 class="card-title" style="padding-bottom: 5px;">Education</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary" style="line-height: 5px;">Master of Computer Applications
-        </h6>
-        <small class="organization">(SRK University of Bhopal)</small>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Bachelor of Computer Applications</h6>
-        <small class="organization">( MCURP University of Bhopal)</small>
+    <div class="card" data-aos="flip-up">
+        <div class="card-body">
+            <h5 class="card-title" style="padding-bottom: 5px;">Education</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary" style="line-height: 5px;">Master of Computer Applications
+            </h6>
+            <small class="organization">(SRK University of Bhopal)</small>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Bachelor of Computer Applications</h6>
+            <small class="organization">( MCURP University of Bhopal)</small>
 
-        <a [routerLink]="['/education']" class="card-link">Show Details.....</a>
+            <a [routerLink]="['/education']" class="card-link">Show Details.....</a>
+        </div>
     </div>
-</div>
 
 
-<div class="card" data-aos="fade-left">
-    <div class="card-body">
-        <h5 class="card-title">Skill</h5>
-        <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
-        <p class="card-text">Front-End Developer specializing in Angular with 3 years of hands-on experience in SPA
-            development, state management, API integration, and responsive UI design using Bootstrap and modern CSS
-            frameworks.</p>
-        <a [routerLink]="['/skills']" class="card-link">Show Details.....</a>
+    <div class="card" data-aos="fade-left">
+        <div class="card-body">
+            <h5 class="card-title">Skill</h5>
+            <!-- <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6> -->
+            <p class="card-text">Front-End Developer specializing in Angular with 3 years of hands-on experience in SPA
+                development, state management, API integration, and responsive UI design using Bootstrap and modern CSS
+                frameworks.</p>
+            <a [routerLink]="['/skills']" class="card-link">Show Details.....</a>
+        </div>
     </div>
-</div>
 
 
-<div class="card" data-aos="fade-right">
-    <div class="card-body" >
-        <h5 class="card-title">Projects</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-            content.</p>
-        <a [routerLink]="['/projects']" class="card-link">Show Details.....</a>
+    <div class="card" data-aos="fade-right">
+        <div class="card-body">
+            <h5 class="card-title">Projects</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                content.</p>
+            <a [routerLink]="['/projects']" class="card-link">Show Details.....</a>
+        </div>
     </div>
-</div>
 
-<!-- <div class="card">
+    <!-- <div class="card">
         <div class="card-body">
             <h5 class="card-title">Technologies</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
@@ -117,18 +123,18 @@
         </div>
     </div> -->
 
-<div class="card" data-aos="flip-up">
-    <div class="card-body">
-        <h5 class="card-title">Contact</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Get In Touch</h6>
-        <p class="card-text">If you have any project idea, job opportunity, or want to collaborate,
-            feel free to contact me. I will respond as soon as possible.
-        </p>
-        <a [routerLink]="['/contact']" class="card-link">Show Details.....</a>
+    <div class="card" data-aos="flip-up">
+        <div class="card-body">
+            <h5 class="card-title">Contact</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Get In Touch</h6>
+            <p class="card-text">If you have any project idea, job opportunity, or want to collaborate,
+                feel free to contact me. I will respond as soon as possible.
+            </p>
+            <a [routerLink]="['/contact']" class="card-link">Show Details.....</a>
 
 
+        </div>
     </div>
-</div>
 
 
 </div>

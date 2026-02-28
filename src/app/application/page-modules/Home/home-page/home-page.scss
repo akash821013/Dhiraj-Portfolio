@@ -9,11 +9,6 @@
         transition: 0.3s ease;
     }
 
-    // .dark-theme {
-    //     background-color: black !important;
-    //     color: white !important;
-    // }
-
     /* Main Hero Layout */
     .hero {
         width: 100%;
@@ -318,7 +313,7 @@
     .card-feild {
         display: flex;
         gap: 10px;
-        padding: 20px;
+        padding: 85px;
         justify-content: center;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
